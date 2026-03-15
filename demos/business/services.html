@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen | Services</title>
+    <meta name="description" content="Our professional services.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/business.css">
+    <style>
+        /* Extra styles for detailed services */
+        .service-row {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            margin-bottom: 6rem;
+            padding-top: 2rem;
+            /* Buffer for scroll anchor */
+        }
+
+        .service-row.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .service-text {
+            flex: 1;
+        }
+
+        .service-image {
+            flex: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .service-list {
+            margin: 1.5rem 0;
+            list-style: none;
+        }
+
+        .service-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-main);
+        }
+
+        .service-list ion-icon {
+            color: var(--accent);
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+
+            .service-row,
+            .service-row.reverse {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="brand">NexGen<span class="dot">.</span></div>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Expertise</a>
+                <a href="index.html#reviews" class="nav-link">Testimonials</a>
+                <a href="contact.html" class="btn-primary">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <div class="hero-section"
+            style="height: 40vh; min-height: 400px; background: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content text-center" style="margin: 0 auto;">
+                <h1 style="font-size: 3.5rem;">Our <span class="text-accent">Expertise</span></h1>
+                <p>Comprehensive solutions tailored to your unique challenges.</p>
+            </div>
+        </div>
+
+        <section class="services-section">
+            <div class="container">
+
+                <!-- 1. Market Analysis -->
+                <div id="market-analysis" class="service-row">
+                    <div class="service-text">
+                        <div class="icon-box"><ion-icon name="trending-up-outline"></ion-icon></div>
+                        <h2>Market Analysis</h2>
+                        <p>Stay ahead of the competition with data-driven insights. We analyze market trends, consumer
+                            behavior, and competitive landscapes to identify your next big opportunity.</p>
+                        <ul class="service-list">
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Competitor Benchmarking</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Consumer Sentiment Analysis</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Growth Opportunity Mapping</li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary">Request Analysis</a>
+                    </div>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Market Analysis">
+                    </div>
+                </div>
+
+                <!-- 2. HR Consulting -->
+                <div id="hr-consulting" class="service-row reverse">
+                    <div class="service-text">
+                        <div class="icon-box"><ion-icon name="people-outline"></ion-icon></div>
+                        <h2>HR Consulting</h2>
+                        <p>Your people are your greatest asset. We help you build a culture of excellence, optimize
+                            talent acquisition, and streamline HR processes for maximum efficiency.</p>
+                        <ul class="service-list">
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Talent Acquisition Strategy</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Leadership Development</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Org Structure Optimization</li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary">Optimize Staffing</a>
+                    </div>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="HR Consulting">
+                    </div>
+                </div>
+
+                <!-- 3. Digital Transformation -->
+                <div id="digital-transformation" class="service-row">
+                    <div class="service-text">
+                        <div class="icon-box"><ion-icon name="globe-outline"></ion-icon></div>
+                        <h2>Digital Transformation</h2>
+                        <p>Embrace the future. We guide organizations through the complex process of modernizing legacy
+                            systems and adopting new digital technologies.</p>
+                        <ul class="service-list">
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Cloud Migration</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Workflow Automation</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Enterprise Software Integration</li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary">Go Digital</a>
+                    </div>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Digital Transformation">
+                    </div>
+                </div>
+
+                <!-- 4. Data Analytics -->
+                <div id="data-analytics" class="service-row reverse">
+                    <div class="service-text">
+                        <div class="icon-box"><ion-icon name="stats-chart-outline"></ion-icon></div>
+                        <h2>Data Analytics</h2>
+                        <p>Turn raw data into actionable intelligence. Our data scientists build custom dashboards and
+                            predictive models to help you make smarter decisions.</p>
+                        <ul class="service-list">
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Predictive Modeling</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Custom BI Dashboards</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Big Data Processing</li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary">Leverage Data</a>
+                    </div>
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Data Analytics">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>NexGen.</h3>
+                <p>© 2026 NexGen Solutions. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="../../index.html" class="back-to-hub">
+        <ion-icon name="arrow-back-outline"></ion-icon> Back to Hub
+    </a>
+
+</body>
+
+</html>
